@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador Alura challenge  creado con javascript,html y css en el curso ONE G5">
+    <meta name="keywords" content="Encriptador,ONE,G5,JS">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>ENCRIPTADOR | ONE-G5</title>
+</head>
+<body>
+    <header>
+        
+        <nav class="main-nav"> 
+            <img src="./img/Logo.png" alt="Logo Alura">
+            
+            <p> Encriptador Alura</p>
+        </nav>
+    </header>
+
+    <main>
+       
+            <section  class="container">
+                
+                <article class="first-article">
+                    <textarea name="texto-ingresado" id="texto" cols="20" rows="15" placeholder="Ingrese el Texto">
+            
+                    </textarea>
+                    <div class="advertencia">
+                        <label for=""> &#9888 solo letras minúsculas y sin acentos</label >
+                    </div>
+                   
+                    <div class="botones">
+                        <input type="submit" value="Encriptar" id="btn-encriptar" class="boton">
+                        <input type="submit" value="Desencriptar" id="btn-desencriptar" class="boton">
+                    </div>
+                    
+                </article>
+               
+                <article class="second-article" id="article-encriptado">
+
+                
+
+                </article>
+                <!-- Templates -->
+                <template id="template-imagen">
+                    
+                    <div class="imagen">
+                        <div>
+                            <img src="./img/Muñeco.png" alt="Muñeco" id="munieco">
+                        </div>
+                        <div >
+                            <p><b>Ningun mensaje fue encontrado</b></p>
+                            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                        </div>
+                                                
+                    </div>
+
+                </template>
+
+                <template id="template-texto">                                      
+                    <textarea name="texto-encriptado" id="t-encriptado" cols="20" rows="10">
+
+                    </textarea>
+                    <div class="botones">
+                        <input type="submit" value="Copiar" id="btn-copiar" class="boton">
+                        
+                    </div>
+
+                </template>
+
+            </section>       
+  
+
+    </main>
+
+
+    <footer>
+        <div id="main-footer">
+            <hr style="color:aliceblue;">
+            <p> Copyright &copy 2023 | <i>Xavier Guillen</i> </p>
+            
+            <hr style="color:aliceblue;">
+        </div>
+    </footer>
+
+    <script src="./app/app.js"></script>
+</body>
+</html>

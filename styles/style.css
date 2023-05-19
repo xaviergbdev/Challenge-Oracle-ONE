@@ -48,17 +48,20 @@ main{
 
 }
 #texto{
-    background-color: #E5E5E5;
+    background-color: #0c0c0c;
+    background-clip: padding-box;
     min-width: 100%;
     min-height: 85%;
-    color: #141932;
+    color: #48c9e0;
     font-weight: 500;
     font-size: 1.5rem;
-    border: #E5E5E5;
+    border-width: 10px;
+    border-image: linear-gradient(to left,#141932,aqua,#141932) 1;
     border-radius: 15px;
-    outline: none;
-
+    outline: none;    
 }
+
+
 
 .botones{
     text-align: center;
@@ -109,20 +112,23 @@ main{
 }
 
 #t-encriptado{
-    background-color: #ffffff;
+    background-color: #131212;
     min-width: 100%;
     min-height: 85%;
-    color: #4c4f5f;
+    color: #e77b32;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-color: #ffffff;   
+    border-radius: 15px;
+    border-width: 10px;
+    border-image: linear-gradient(to left,#141932,#e77b32,#141932) 1;
     border-radius: 15px;
     outline: none;
 }
 
 #main-footer{
     width: 90%;
-    margin: 30px auto;
+    margin: 40px auto;
     color: #ffffff;
     font-size: 1rem; 
     text-align: center;   
@@ -168,8 +174,10 @@ main{
     }
 
     #main-footer{
-        margin-top: 100px;
+        margin-top: 200px;
     }
+
+   
 }
 /* Mobile */
 @media (min-width: 376px) and (max-width: 767px){
@@ -211,8 +219,9 @@ main{
     }
 
     #main-footer{
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
+    
 
 }

@@ -28,7 +28,7 @@ btnEncriptar.addEventListener('click',()=>{
     if(encriptar()==''){
         articulo.textContent='';
         noTexto()
-        console.log("Sin Texto")
+        //console.log("Sin Texto")
     }else{
         articulo.textContent='';
         templateText.querySelector('textarea').value=encriptar();   
@@ -36,7 +36,7 @@ btnEncriptar.addEventListener('click',()=>{
         fragment.appendChild(clone);    
         articulo.appendChild(fragment);      
         
-        console.log('Mostrando texto encriptado'); 
+        // console.log('Mostrando texto encriptado'); 
     }         
 })
 
@@ -63,7 +63,7 @@ btnDesencriptar.addEventListener('click',()=>{
         fragment.appendChild(clone);    
         articulo.appendChild(fragment);      
         
-        console.log('Mostrando texto desencriptado');
+        // console.log('Mostrando texto desencriptado');
     }    
 })
 
@@ -77,7 +77,7 @@ function encriptar(){
     textoEncriptado = textoEncriptado.replace(/o/igm,'ober');
     textoEncriptado = textoEncriptado.replace(/u/igm,'ufat');
     
-    console.log(textoEncriptado);
+    // console.log(textoEncriptado);
     return textoEncriptado;
 }
 
@@ -89,7 +89,7 @@ function desencriptar(){
     textoDesencriptado = textoDesencriptado.replace(/ai/igm,'a');
     textoDesencriptado = textoDesencriptado.replace(/ober/igm,'o');
     textoDesencriptado = textoDesencriptado.replace(/ufat/igm,'u');
-    console.log(textoDesencriptado);
+    //console.log(textoDesencriptado);
     return textoDesencriptado;
 }
 
